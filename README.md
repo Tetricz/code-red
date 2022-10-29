@@ -1,9 +1,7 @@
 # CodeRed
 
-## Challenege
-
-### LyondellBasell
-
+## Challenege: LyondellBasell
+------------------
 Don't run out of Resources!
 
 LYB's team has encountered a few issues when developing Field Applications for Autonomous and Personal Devices off-world!  
@@ -48,3 +46,14 @@ Implement a mechanism that would allow Devices to use an offline copy of a map s
 
 ### Hints
 ------------------
+### Issue 1 & 2
+1. Assume Devices are Andriod and use Andrio API
+2. Implent Space/Power depletion Autonomous Device instructions to head to the suggested location or by implementing an activity for Personnel to be notified and get directions to head to a suggested location.
+3.Personal may need nudge to follow path,  they should but a nudge is good.
+
+### Issue 3
+1. implement or mock and focus on solving other issues such as Issues One and Two
+2. wouldn’t need any Dependency Injection, this simplifies implementing any solutions for it.
+3. Devices to be Android based and use Android’s APIs to keep track of the Device’s location and the availability of internet connectivity.
+
+
