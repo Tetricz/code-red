@@ -1,1 +1,8 @@
 .DS_Store
+
+*.o
+*obj/
+app
+myapp
+
+*.d
