@@ -33,3 +33,8 @@ Contructor:
 * Humidity
 * Daylight
 * Wind speed
+
+#### Geographical events
+
+* Barriers(Canyons/ravines/things not traversable)
+* Altitude
