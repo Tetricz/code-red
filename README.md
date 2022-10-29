@@ -56,4 +56,4 @@ Implement a mechanism that would allow Devices to use an offline copy of a map s
 2. wouldn’t need any Dependency Injection, this simplifies implementing any solutions for it.
 3. Devices to be Android based and use Android’s APIs to keep track of the Device’s location and the availability of internet connectivity.
 
-
+[^Discord Link] https://discord.com/invite/acy4BERJ
