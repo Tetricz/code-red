@@ -17,6 +17,7 @@ body{
     width: 25%;
     height: 100%;
     background-color: #5401A7;
+    overflow-y: auto;
 }
 
 .tabbedViewTitle{
@@ -29,14 +30,13 @@ body{
 
 .tabbedViewBars{
     font-size: 1em;
-    background-color: whitesmoke;
-    color: #5401A7;
+    color: whitesmoke;
     text-align: left;
     width: 100%;
 }
 
 .tabbedViewCheckBx{
-    background-color: #5401A7;
+    background-color: whitesmoke;
     size: 0.5em;
 }
 
