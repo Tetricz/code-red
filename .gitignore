@@ -6,3 +6,4 @@ app
 myapp
 
 *.d
+*.out
