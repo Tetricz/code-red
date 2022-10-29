@@ -1,10 +1,6 @@
 # CodeRed
 
-## Challeneges
-
-### Conocco
-
-Find an innovative way to display oil and gas production statistics/data sets. These are large and complex data sets.
+## Challenege
 
 ### LyondellBasell
 
@@ -31,12 +27,15 @@ Examples:
 A mobile application that allows a consumer to provide a picture of an item and ir performs a search to find similar items at retail locations and highlights the best price.
 
 ### Side Quests
+------------------
 
 * Best UI
 * Best Beginner hack
 * Best Use of Cloud
 * Most Sustainable
 
+### Sub Challenges
+------------------
 ### Issue 1
 Implement a mechanism to prevent Devices from running out of space while recording Field Events during Field Activities – such as detecting the rate in which the space is consumed by a Field Application and directing Autonomous or Personal Devices to the nearest Internet Availability Zone before the Device runs out of space.
 
@@ -47,3 +46,5 @@ Implement a mechanism to prevent Devices from running out of battery while recor
 Implement a mechanism that would allow Devices to use an offline copy of a map so Devices can be directed to the nearest Replenish Zone to replenish Space or Power. This mechanism should also record updates to the map so they can be later applied to the centralized map version.
 
 
+### Hints
+------------------
