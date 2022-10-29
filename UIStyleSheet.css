@@ -12,6 +12,7 @@ body{
 }
 
 .tabbedViewTitle{
+    position: absolute;
     background-color: #5401A7;
     font-size: 1.5em;
     text-align: left;
