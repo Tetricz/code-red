@@ -22,6 +22,7 @@ body{
     font-size: 1em;
     background-color: whitesmoke;
     text-align: left;
+    
 }
 
 .tabbedViewCheckBx{
@@ -29,6 +30,3 @@ body{
     size: 0.5em;
 }
 
-.map{
-
-}

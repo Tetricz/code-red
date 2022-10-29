@@ -1,9 +1,22 @@
 //Start of the nav bar codes
-function openNavBar(){
-    document.getElementById("ReportSideBar").style.display = "block";
+
+function decideToggle(){
+    var navBar = document.getElementById("ReportSideBar").style.direction
+
+    if(document.getElementById("ReportSideBar").style.direction == "none"){
+        closeNav()
+    } else{
+        openNav()
+    }
 }
 
-function closeNavBar(){
-    document.getElementById("ReportSideBar").style.display = "None"
+function openNav(){
+    document.getElementById("ReportSideBar").style.width = "100%"
+    document.getElementById("ReportSideBar").style.direction = "Block"
+        
+
+}
+function closeNav(){
+    document.getElementById("ReportSideBar").style.direction = "none"
 }
 //End of Nav Bar Codes
