@@ -1,0 +1,29 @@
+/* Color Codes 
+    Green #54A701
+    Blue #01A7A7
+    Blue/Gray #B3D1D0
+    Purple #5401A7
+*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #B3D1D0;
+    color: black;
+}
+
+.tabbedViewTitle{
+    background-color: #5401A7;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.tabbedViewBars{
+    font-size: 1em;
+    background-color: whitesmoke;
+    text-align: left;
+}
+
+.tabbedViewCheckBx{
+    background-color: #5401A7;
+    size: 0.5em;
+}
