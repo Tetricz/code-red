@@ -6,6 +6,11 @@
 * Internet availability switching on or off
 * Geographical events
 
+## Rover design assumptions
+
+* OS and Applications are stored on own memory
+* Seperate data storage for collections
+
 ### Mem Emulation
 
 Contructor:
@@ -13,7 +18,6 @@ Contructor:
 * Rover Name/ID
 * Set Total Memory (Arbitrary based on the storage in the machine)
 * Set Free Memory (Available for data collection) Fill only to 90%, leave 10% for overfill protection
-* OS and applications (takes 8 Gigs)
 
 #### General Collection
 
@@ -31,10 +35,16 @@ Contructor:
 
 * Temp
 * Humidity
+* Atmosphere Pressure
 * Daylight
 * Wind speed
 
 #### Geographical events
 
-* Barriers(Canyons/ravines/things not traversable)
 * Altitude
+* Ravines
+* Cliffs
+* Hills
+* Craters
+
+These are barriers. A box grid that highlights an area of the map
