@@ -1,22 +1,19 @@
 //Start of the nav bar codes
 
 function decideToggle(){
-    var navBar = document.getElementById("ReportSideBar").style.direction
+    var navBar = document.getElementById("ReportSideBar").style.display
 
-    if(document.getElementById("ReportSideBar").style.direction == "none"){
-        closeNav()
-    } else{
+    if(navBar == "none"){
         openNav()
+    } else{
+        closeNav()
     }
 }
 
 function openNav(){
-    document.getElementById("ReportSideBar").style.width = "100%"
-    document.getElementById("ReportSideBar").style.direction = "Block"
-        
-
+    document.getElementById("ReportSideBar").style.display = "block"
 }
 function closeNav(){
-    document.getElementById("ReportSideBar").style.direction = "none"
+    document.getElementById("ReportSideBar").style.display = "none"
 }
 //End of Nav Bar Codes

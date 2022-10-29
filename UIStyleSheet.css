@@ -22,7 +22,7 @@ body{
     font-size: 1em;
     background-color: whitesmoke;
     text-align: left;
-    
+    width: 100%;
 }
 
 .tabbedViewCheckBx{
@@ -30,3 +30,6 @@ body{
     size: 0.5em;
 }
 
+h1{
+    text-align: center;
+}
