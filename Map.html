@@ -9,7 +9,8 @@
 <body onload="start()">
     <h1>Rover Map</h1>
 
-    <button onclick="grabDate(), decideToggle()"> Current Route </button>
+    <iframe src="https://www.google.com/maps/d/embed?mid=1CjGuOg7NnVcL9M4vpNsyUH5Ugp7R4iE&ehbc=2E312F" class="map" id="map"></iframe>
+    
 
     <div class = "tabbedView" style ="display:none" id ="ReportSideBar">
         <a class="tabbedViewTitle">Route</a>
@@ -40,4 +41,13 @@
           </form>
     </div>
 
+    <div class="horizontalBar" id="horizonBar">
+        
+        <ul>
+            <li> <button onclick="grabDate(), decideToggle()"> Current Route </button></li> 
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+          </ul>
+    </div>
 </body>

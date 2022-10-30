@@ -12,13 +12,17 @@ body{
 }
 
 .tabbedView{
-    position: absolute;
-    padding: auto;
+    position:fixed;
+    padding-right: 10px;
+    left: 0%;
+    right: 75%;
+    top: 25%;
     /*width: 25%;
     height: 100%;*/
     background-color: #5401A7;
     overflow-y: auto;
     margin: auto;
+    z-index: 90;
 }
 
 .tabbedViewTitle{
@@ -56,4 +60,33 @@ h1{
     justify-content: center;
     text-align: center;
     margin: auto;
+}
+
+.map{
+    position: fixed;
+    top: 25%;
+    bottom: 0px;
+    right: 0px;
+    width: 80%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 10;
+    height: 80%;
+}
+
+.horizontalBar{
+    position: fixed;
+}
+
+li{
+    padding: 00.5em;
+    margin: 0.5em;
+    list-style-type: none;
+    display: inline;
+    float: center;
+    text-align: center;
+    text-decoration: none; 
+    
 }
