@@ -43,3 +43,5 @@ function makePersonalIcons(rdBttn){
 
    setTimeout(() => {})
 }
+
+{{ helloworld }}
