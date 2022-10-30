@@ -52,8 +52,9 @@ h1{
 
 .line {
     opacity: 50%;
-    background-color: whitesmoke;
-    height: 0.1px
+    background-color: #5401A7;
+    height: 0.1px;
+    width: 2px;
 }
 
 #StartRouteBttn{
@@ -136,13 +137,28 @@ h2{
     border: 1px solid black;
     background-color: whitesmoke;
     display: block;
+    position: flex;
     margin-left: auto;
     margin-right: auto;
 }
 
+.canvasDiv{
+    margin-left: auto;
+    margin-right: auto;
+    position: flex;
+    
+}
+
 .information{
-    text-align: left;
-    align-items: left;
-    justify-content: left;
-    position: block;
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+    margin-right: auto;
+    border: 5px solid #5401A7;
+}
+
+.wrapWrap{
+    justify-content: center;
 }
