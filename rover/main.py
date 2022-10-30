@@ -6,8 +6,10 @@ from video import video
 from weather import weather
 
 if __name__ == "__main__":
-    #db = dbcoms.DatabaseComs()
-    #db.seedDatabase()
+    db = dbcoms.DatabaseComs()
+    r = rover(None, None, None, None)
+    r.get_velocity(50.0,50.05,20.0,70.0)
+    r.check_battery()
 
     r = rover(1,100,100,0);
     v = video(1,1,1,1,1,1,1,1,1)
@@ -16,7 +18,5 @@ if __name__ == "__main__":
     r.write_to_ssd('ssd.txt',w)
 
 
+    db.close()
 
-
-
-    

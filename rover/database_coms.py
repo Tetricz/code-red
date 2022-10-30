@@ -20,6 +20,9 @@ class DatabaseComs:
         self.cursor.execute("UPDATE rover_state SET battery_level = " + str(status) + " WHERE id = " + str(rover_id) + ";")
         self.commit()
 
+    def addRover(self, rover_id):
+        print("hello")
+
     def insertGeo(self, dataStr):
         self.cursor.execute("INSERT INTO geo_events (date, rover_id, geo_type, location) VALUES " + dataStr + ";")
 
