@@ -9,15 +9,22 @@
 <body>
     <h1>Rover Map</h1>
 
-    <button onclick="grabDate(), decideToggle()"> Current Route </button>
+    <button onclick="grabDate(), decideToggle(), cloneElements()"> Current Route </button>
 
     <div class = "tabbedView" style ="display:none" id ="ReportSideBar">
+        <a class="tabbedViewTitle">Route</a>
+        <br>
         <a class="tabbedViewTitle" id = "date"></a>
-        <br> <br>
+        <br>
+        <hr class="line">
 
         <form>
-            <input type="checkbox" name="routeBox" value="Bike"  checked>
-            <label for ="route1" class="tabbedViewBars"> Spot 1</label><br>
+            <div class = "lines" id = "lines">
+                <input type="checkbox" name="routeBox" value="Bike"  checked>
+                <label for ="route1" class="tabbedViewBars"> Spot 1</label>
+                <br>
+            <hr class="line">
+            </div>
             
           </form>
     </div>

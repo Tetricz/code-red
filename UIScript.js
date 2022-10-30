@@ -52,5 +52,10 @@ function grabDate(){
 //End of Date/Time Entry
 
 //Start of dupliating route options
-
+function cloneElements(){
+    var elem = document.querySelector('#lines')
+    var clone = elem.cloneNode(true)
+    clone.id = "lines2"
+    elem.after(clone)
+}
 //End of route dups
