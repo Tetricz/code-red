@@ -3,43 +3,10 @@
 <head>
     <link rel="stylesheet" href="UIStyleSheet.css">
     <script src="UIScript.js"></script>
-<title>Rover Map</title>
+<title>Rover Objective</title>
 </head>
 
 <body onload="start()">
-    <h1>Rover Map</h1>
-
-    
-
-    <div class = "tabbedView" style ="display:none" id ="ReportSideBar">
-        <a class="tabbedViewTitle">Route</a>
-        <br>
-        <a class="tabbedViewTitle" id = "date"></a>
-        <br>
-        <hr class="line">
-
-        <div class="tabbedViewTitle" id="startRoute">
-            <label>X Position:</label> <br>
-            <input type="text" id="xpos" name="xPosition"/> <br/>
-            <hr class="line">
-            <label>Y Position: </label><br>
-            <input type="text" id="ypos" name="yPosition"/> <br/>
-            <hr class="line">
-            <button onclick="routeStart()" id="StartRouteBttn">Start Route</button>
-
-        </div>
-
-        <form id = "routesList">
-            <div class = "lines" id = "lines">
-                <input type="checkbox" name="routeBox" value="route"  checked>
-                <label for ="route1" class="tabbedViewBars"> Spot 1</label>
-                <br>
-            <hr class="line">
-            </div>
-            
-          </form>
-    </div>
-
     <div class="horizontalBar" id="horizonBar">
         
         <ul>
@@ -50,4 +17,14 @@
             <li><a href="default.html" class="button">Home</a></li>
           </ul>
     </div>
+
+    <h1>Rover Map</h1>
+
+    <img src="homepageImage.jpg" alt="A simulated picture of mars. There is a mostly red-oraange landscape with no humans in sight. The sky is of a soft blue."
+    ALIGN="Left" id="homeImage" >    
+    <h3>Objective</h3>
+        <p> To simulate a Mars Rover and the personal aviable on Mars. The rover goes around collecting data, handing task, and manageming its own data/battery. 
+            The rover is supposed to go to designated power and wifi spots. Unless otherwise stated, the two resource returnal spots are seperated and can 
+            not increase battery's energy and upload storage. Access points are also increasing as the rover discoveres new resource renewal spots.
+        </p>   
 </body>
