@@ -27,12 +27,12 @@ function makeIcons(rdBttn){
     var radio = rdBttn.id
 
     if(radio === "roverSelection1"){
-        document.getElementById("test").innerHTML = "yes"
+        //document.getElementById("test").innerHTML = "yes"
     } else if(radio === "roverSelection2"){
-        document.getElementById("test").innerHTML = "maybe"
+        //document.getElementById("test").innerHTML = "maybe"
     } 
     else{
-        document.getElementById("test").innerHTML = "no"
+        //document.getElementById("test").innerHTML = "no"
     }
 }
 
@@ -41,5 +41,10 @@ function makePersonalIcons(rdBttn){
    canvas.style.display = "block"
    document.getElementById("warning").style.display="none"
 
-   setTimeout(() => {})
+   setTimeout(() => {personalError();}, 2000);
+}
+
+function personalError(){
+    document.getElementById("sysWarn").style.display = "block"
+    document.getElementById("canvas").style.display = "none"
 }
