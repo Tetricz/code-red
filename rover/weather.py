@@ -47,7 +47,9 @@ class weather(data):
                 +str(self.wind_speed)
                 +'\n')
 
+    def create_weather():
 
+        return 
 
 
 

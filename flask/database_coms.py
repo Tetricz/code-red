@@ -26,6 +26,10 @@ class DatabaseComs:
         self.cursor.execute("SELECT lat, long, rover_state.battery_level FROM rover_state, rover_path WHERE rover_state.id = " + rover + "AND rover_path.id = " + rover + ";")
         return self.cursor.fetchall()
 
+    def getWeather(self):
+        self.cursor.execute("SELECT * FROM weather_events;")
+        return self.cursor.fetchall()
+
 if __name__ == "__main__":
     database = DatabaseComs()
     s = database.getRover("3")
