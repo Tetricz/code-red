@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="UIStyleSheet.css">
     <script src="UIScript.js"></script>
+    <script src="maps.js"></script>
 <title>Rover Map</title>
 </head>
 
@@ -22,13 +23,15 @@
     <div class="checkBoxes" id="roverSelect">
         
         <ul>
-            <input type="radio" id="roverSelections" name="rovers" value="rover">
+            <input type="radio" id="personal1" name="rovers" value="rover" onchange="makeIcons(this)">
             <label for="rover1"> Personal 1</label>
-            <input type="radio" id="roverSelections" name="rovers" value="rover">
+            <input type="radio" id="personal2" name="rovers" value="rover" onchange="makeIcons(this)">
             <label for="rover2"> Personal 2</label>
-            <input type="radio" id="roverSelections" name="rovers" value="rover">
+            <input type="radio" id="personal3" name="rovers" value="rover" onchange="makeIcons(this)">
             <label for="rover3"> Personal 3</label>
           </ul>
     </div>
-    
+    <h2 id="warning">Select A Personal For Information</h2>
+
+    <canvas width="500" height="500" class="canvas" id="canvas"></canvas>
 </body>
