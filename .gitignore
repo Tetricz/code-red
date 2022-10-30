@@ -7,3 +7,4 @@ myapp
 
 *.d
 *.out
+__pycache__
