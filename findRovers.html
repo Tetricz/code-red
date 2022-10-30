@@ -3,10 +3,12 @@
 <head>
     <link rel="stylesheet" href="UIStyleSheet.css">
     <script src="UIScript.js"></script>
+    <script src="maps.js"></script>
 <title>Rover Map</title>
 </head>
 
-<body>
+<body onload="generateMap()">
+
     <div class="horizontalBar" id="horizonBar">
         
         <ul>
@@ -23,13 +25,16 @@
     <div class="checkBoxes" id="roverSelect">
         
         <ul>
-            <input type="checkbox" id="roverSelections" name="rovers" value="rover">
+            <input type="radio" id="roverSelections" name="rovers" value="rover">
             <label for="rover1"> Rover 1</label>
-            <input type="checkbox" id="roverSelections" name="rovers" value="rover">
+            <input type="radio" id="roverSelections" name="rovers" value="rover">
             <label for="rover2"> Rover 2</label>
-            <input type="checkbox" id="roverSelections" name="rovers" value="rover">
+            <input type="radio" id="roverSelections" name="rovers" value="rover">
             <label for="rover3"> Rover 3</label>
           </ul>
     </div>
     
+    <!--<h2>Select A Rover For Information</h2>-->
+
+    <canvas width="500" height="500" class="canvas" id="canvas"></canvas>
 </body>
