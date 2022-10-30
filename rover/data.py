@@ -1,5 +1,7 @@
 from abc import abstractmethod
 from datetime import datetime
+import os
+import os.path
 
 class data:
 
@@ -16,6 +18,10 @@ class data:
     @abstractmethod
     def _debug_print():
         pass
+    @abstractmethod
+    def write_to(self,file_name):
+        pass
+
 
 
 if __name__ == "__main__":

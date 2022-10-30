@@ -5,6 +5,9 @@ import queue
 import csv
 import os
 from video import video
+import os.path
+from data import data
+
 
 class rover:
     def __init__(self,_id,_battery,_total_memory,_used_memory): #constructor
@@ -16,13 +19,12 @@ class rover:
     def get_velocity(self, x1, y1, x2, y2):
         x = x1 - x2
         y = y1 - y2
-
         direction = (y/x)
-        
         return direction
 
-    def check_battery():
-        pass;
+    def check_battery(self):
+        if(self.battery <= 10):
+            self.status = 5
     def upload():
         pass;
     def movement(self):
@@ -36,9 +38,6 @@ class rover:
             pass
         elif(self.status == 5):
             pass
-            
-    def create_file():
-        pass;
 
     def dequeue(self):
         while self.q.qsize() != 0:
@@ -47,19 +46,34 @@ class rover:
         self.q.put(job)
 
     def write(self,file_name):
-        check = path_to_file = 'test.txt'
-        if not check:
+      
+        if not os.path.exists(file_name):
             file = open(file_name,'w')
-            file.write('1')
         else:
             file = open(file_name,'a')
-            file.write(str(self.id)+",\n")
-            file.write(str(self.battery)+',\n')
-            file.write(str(self.total_memory)+',\n')
-            file.write(str(self.used_memory)+',\n')
-            file.write(str(self.status)+',\n')
-            file.write(str(self.lat)+',\n')
-            file.write(str(self.long)+',\n')
+
+        file.write(str(self.id)+",\n")
+        file.write(str(self.battery)+',\n')
+        file.write(str(self.total_memory)+',\n')
+        file.write(str(self.used_memory)+',\n')
+        file.write(str(self.status)+',\n')
+        file.write(str(self.lat)+',\n')
+        file.write(str(self.long)+',\n')
+
+
+
+    def write_to_ssd(self,file_name,data_type):
+        check = os.path.exists('ssd.txt')
+        if not check:
+            file = open(file_name,'w')
+        else:
+            file = open(file_name,'a')
+            
+        data_type.write_to(file_name)
+        
+        
+        
+
 
 
 if __name__ == "__main__":
