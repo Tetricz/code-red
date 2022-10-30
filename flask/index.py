@@ -2,6 +2,8 @@ from flask import Flask
 from flask import send_from_directory
 from flask import send_file
 from flask import render_template
+
+import rover
 import database_coms as database
 
 app = Flask(__name__, template_folder='../html')
@@ -19,10 +21,8 @@ def findRovers():
     db = database.DatabaseComs()
     co = db.getRover("3")
     we = db.getWeather()
-    print(co)
-    print(we)
     db.close()
-    return render_template('findRovers.html', coords=str(co[0][0]) + ", " + str(co[0][1]), battery=str(co[0][2]) , weather=str(we[0][0]))
+    return render_template('findRovers.html', coords=str(co[0][0]) + ", " + str(co[0][1]), battery=str(co[0][2]), weather=str(we[0][0]))
 
 @app.route("/<path:name>")
 def html(name):

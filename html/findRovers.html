@@ -42,18 +42,17 @@
         <div class="canvasDiv" id="roverInfo">
             <div class="information" id="information">
                 <label>Current Coordinates</label> <br>
-                <label> X , Y</label> <br>
-                <hr class="line">
-                <label>Last Reported Coordinates</label> <br>
-                <label>X, Y</label> <br>
+                <label> {{ coords }} </label> <br>
                 <hr class="line">
                 <label>Battery</label> <br>
-                <label>77%</label> <br>
+                <label>{{ battery }}%</label> <br>
                 <hr class="line">
                 <label>Storage</label> <br>
-                <label>5TB</label> <br>
+                <label>{{ storage }}</label> <br>
                 <hr class="line">
-                
+                <label>Weather</label> <br>
+                <label>{{ weather }}</label> <br>
+                <hr class="line">
             </div>
             <canvas width="500" height="500" class="canvas" id="canvas"></canvas>
 

@@ -30,6 +30,9 @@ class DatabaseComs:
         self.cursor.execute("SELECT * FROM weather_events;")
         return self.cursor.fetchall()
 
+    def getStorage(self):
+        self.cursor.execute("SELECT ")
+
 if __name__ == "__main__":
     database = DatabaseComs()
     s = database.getRover("3")

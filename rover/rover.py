@@ -1,9 +1,11 @@
 from genericpath import exists
+from random import randrange
 from sys import maxsize
 from telnetlib import STATUS
 import queue
 import csv
 import os
+import random
 from video import video
 import os.path
 from data import data
@@ -70,6 +72,14 @@ class rover:
             file = open(file_name,'a')
             
         data_type.write_to(file_name)
+
+    def set_storage(self):
+        self.used_memory = random.randrange(0, 15000)
+    
+    def check_storage(self):
+        self.set_storage()
+        return self.used_memory
+
         
         
         
