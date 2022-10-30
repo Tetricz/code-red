@@ -23,7 +23,7 @@ class rover:
         return direction
 
     def check_battery(self):
-        if(self.battery <= 10):
+        if(self.battery <= 10.0):
             self.status = 5
     def upload():
         pass;

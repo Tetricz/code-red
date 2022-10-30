@@ -21,11 +21,10 @@ class video(data):
         else:
             file = open(file_name,'a')
             file.write("video:"
-                +str(self.date)+','
-                +str(self.time)+','
+                +str(self.datetime)+','
                 +str(self.lat)+','
                 +str(self.long)+','
-                +str(self.batery_level)
+                +str(self.battery_level)
                 +str(self.vid_name)+','
                 +str(self.size)
                 +'\n')
