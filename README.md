@@ -55,5 +55,20 @@ Implement a mechanism that would allow Devices to use an offline copy of a map s
 1. implement or mock and focus on solving other issues such as Issues One and Two
 2. wouldn’t need any Dependency Injection, this simplifies implementing any solutions for it.
 3. Devices to be Android based and use Android’s APIs to keep track of the Device’s location and the availability of internet connectivity.
+------------------
 
+## Team Rand() LyondellBasell Challenge
 
+The team made an attempt at all the different issues. 
+
+We used SQL databases with data entry/retrieval with python. 
+The web server is hosted on flask, a micro web dev python platform.
+The webpage is developed using HTML, CSS, and javascript.
+
+The original object of the project was to make an interactive webpage that displayed both the personal and rover pov. 
+
+The rover's pov would contain an interactive map that would update in real-time as a perspective of rover movement. The rover's page would also contain the current sensor reading for the rover along with storage and battery power. 
+
+The personal's pov, which was decided to just error out, was to show the last location of the rover known and the endpoint of the rover.
+
+The past routes would have given searchable filters for the data. The rover's uploaded information would become a new entry point in the past routes.
