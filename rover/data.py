@@ -4,11 +4,6 @@ import os.path
 
 class data:
 
-    _date     = None;
-    _time     = None;
-    _lat      = None;
-    _long     = None;
-    _altitude = None;
 
     def __init__(self,_date,_time,_lat,_long,_altitude,_battery_level):
         self.date = _date;
