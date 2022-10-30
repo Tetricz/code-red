@@ -1,23 +1,21 @@
 
 import database_coms as dbcoms
-import xml.etree.ElementTree as ET
 from rover import rover
-import time
-import os
+from data import data
+from video import video
+from weather import weather
 
 if __name__ == "__main__":
     #db = dbcoms.DatabaseComs()
     #db.seedDatabase()
 
     r = rover(1,100,100,0);
-    # r.dequeue()
-    # i = 0;
-    # while True:
-    #     print(i)
-    #     time.sleep(1)
-    #     i+=1
-    list = [1,2,3,4,5,6,7]
-    r.write('test.txt')
+    v = video(1,1,1,1,1,1,1,1,1)
+    w = weather(1,1,1,1,1,1,1,1,1,1,1)
+    r.write_to_ssd('ssd.txt',v)
+    r.write_to_ssd('ssd.txt',w)
+
+
 
 
 
