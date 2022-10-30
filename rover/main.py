@@ -1,5 +1,8 @@
+
 import database_coms as dbcoms
-import rover
+from rover import rover
+import time
+import os
 
 if __name__ == "__main__":
     db = dbcoms.DatabaseComs()
@@ -8,3 +11,4 @@ if __name__ == "__main__":
     r.check_battery()
 
     db.close()
+

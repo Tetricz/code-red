@@ -1,5 +1,4 @@
 from data import data
-
 class weather(data):
     temp = None;
     humidity = None;
