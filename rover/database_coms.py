@@ -47,26 +47,26 @@ class DatabaseComs:
 
         cursor.execute("DROP TABLE IF EXISTS rover_state;")
         cursor.execute("CREATE TABLE rover_state (id INT PRIMARY KEY, status INT, online BOOLEAN NOT NULL, state_entered TIMESTAMP, battery_level FLOAT);")
-        cursor.execute("INSERT INTO rover_state (id, status, online, state_entered, battery_level) VALUES (%s, %s, %s, %s, %s);", (1, 0, True, "2100-01-01 00:00:00", 100.0))
+        cursor.execute("INSERT INTO rover_state (id, status, online, state_entered, battery_level) VALUES (%s, %s, %s, %s, %s);", (1, 0, True, "2100-01-01 00:00:00", 90.0))
         cursor.execute("INSERT INTO rover_state (id, status, online, state_entered, battery_level) VALUES (%s, %s, %s, %s, %s);", (2, 0, True, "2100-01-02 00:00:00", 100.0))
         cursor.execute("INSERT INTO rover_state (id, status, online, state_entered, battery_level) VALUES (%s, %s, %s, %s, %s);", (3, 0, True, "2100-01-03 00:00:00", 100.0))
 
         cursor.execute("DROP TABLE IF EXISTS rover_path;")
-        cursor.execute("CREATE TABLE rover_path (key serial PRIMARY KEY, date TIMESTAMP, rover_id INT, lat FLOAT, long FLOAT);")
-        cursor.execute("INSERT INTO rover_path (date, rover_id, lat, long) VALUES (%s, %s, %s, %s);", ("2100-01-01 00:00:00", 1, 92.70324, 25.31721))
-        cursor.execute("INSERT INTO rover_path (date, rover_id, lat, long) VALUES (%s, %s, %s, %s);", ("2100-01-02 00:00:00", 1, 8.01582, 80.15555))
-        cursor.execute("INSERT INTO rover_path (date, rover_id, lat, long) VALUES (%s, %s, %s, %s);", ("2100-01-03 00:00:00", 3, 15.02566, 15.88888))
+        cursor.execute("CREATE TABLE rover_path (key serial PRIMARY KEY, date TIMESTAMP, id INT, lat FLOAT, long FLOAT);")
+        cursor.execute("INSERT INTO rover_path (date, id, lat, long) VALUES (%s, %s, %s, %s);", ("2100-01-01 00:00:00", 1, 92.70324, 25.31721))
+        cursor.execute("INSERT INTO rover_path (date, id, lat, long) VALUES (%s, %s, %s, %s);", ("2100-01-02 00:00:00", 2, 8.01582, 80.15555))
+        cursor.execute("INSERT INTO rover_path (date, id, lat, long) VALUES (%s, %s, %s, %s);", ("2100-01-03 00:00:00", 3, 15.02566, 15.88888))
 
         cursor.execute("DROP TABLE IF EXISTS weather_events;")
         cursor.execute("CREATE TABLE weather_events (key serial PRIMARY KEY, \
-            date TIMESTAMP, rover_id INT, \
+            date TIMESTAMP, id INT, \
             humidity FLOAT, temp FLOAT, atmosphere FLOAT, wind_speed INT, visibilty INT);")
-        cursor.execute("INSERT INTO weather_events (date, rover_id, humidity, temp, atmosphere, wind_speed, visibilty) VALUES (%s, %s, %s, %s, %s, %s, %s);", ("2100-01-01 00:00:00", 1, 0.0, 0.0, 0.0, 0, 0))
-        cursor.execute("INSERT INTO weather_events (date, rover_id, humidity, temp, atmosphere, wind_speed, visibilty) VALUES (%s, %s, %s, %s, %s, %s, %s);", ("2100-01-02 00:00:00", 1, 0.0, 0.0, 0.0, 0, 0))
-        cursor.execute("INSERT INTO weather_events (date, rover_id, humidity, temp, atmosphere, wind_speed, visibilty) VALUES (%s, %s, %s, %s, %s, %s, %s);", ("2100-01-03 00:00:00", 3, 0.0, 0.0, 0.0, 0, 0))
-        cursor.execute("INSERT INTO weather_events (date, rover_id, humidity, temp, atmosphere, wind_speed, visibilty) VALUES (%s, %s, %s, %s, %s, %s, %s);", ("2100-01-01 00:01:00", 1, 1.0, 2.0, 0.0, 0, 0))
-        cursor.execute("INSERT INTO weather_events (date, rover_id, humidity, temp, atmosphere, wind_speed, visibilty) VALUES (%s, %s, %s, %s, %s, %s, %s);", ("2100-01-02 00:01:00", 2, 2.0, 1.0, 0.0, 0, 0))
-        cursor.execute("INSERT INTO weather_events (date, rover_id, humidity, temp, atmosphere, wind_speed, visibilty) VALUES (%s, %s, %s, %s, %s, %s, %s);", ("2100-01-03 00:01:00", 3, 2.0, 2.0, 0.0, 0, 0))
+        cursor.execute("INSERT INTO weather_events (date, id, humidity, temp, atmosphere, wind_speed, visibilty) VALUES (%s, %s, %s, %s, %s, %s, %s);", ("2100-01-01 00:00:00", 1, 0.0, 0.0, 0.0, 0, 0))
+        cursor.execute("INSERT INTO weather_events (date, id, humidity, temp, atmosphere, wind_speed, visibilty) VALUES (%s, %s, %s, %s, %s, %s, %s);", ("2100-01-02 00:00:00", 1, 0.0, 0.0, 0.0, 0, 0))
+        cursor.execute("INSERT INTO weather_events (date, id, humidity, temp, atmosphere, wind_speed, visibilty) VALUES (%s, %s, %s, %s, %s, %s, %s);", ("2100-01-03 00:00:00", 3, 0.0, 0.0, 0.0, 0, 0))
+        cursor.execute("INSERT INTO weather_events (date, id, humidity, temp, atmosphere, wind_speed, visibilty) VALUES (%s, %s, %s, %s, %s, %s, %s);", ("2100-01-01 00:01:00", 1, 1.0, 2.0, 0.0, 0, 0))
+        cursor.execute("INSERT INTO weather_events (date, id, humidity, temp, atmosphere, wind_speed, visibilty) VALUES (%s, %s, %s, %s, %s, %s, %s);", ("2100-01-02 00:01:00", 2, 2.0, 1.0, 0.0, 0, 0))
+        cursor.execute("INSERT INTO weather_events (date, id, humidity, temp, atmosphere, wind_speed, visibilty) VALUES (%s, %s, %s, %s, %s, %s, %s);", ("2100-01-03 00:01:00", 3, 2.0, 2.0, 0.0, 0, 0))
 
         cursor.execute("DROP TABLE IF EXISTS geo_events;")
         cursor.execute("CREATE TABLE geo_events (key serial PRIMARY KEY, \
@@ -82,8 +82,8 @@ class DatabaseComs:
 
         cursor.execute("DROP TABLE IF EXISTS stations;")
         cursor.execute("CREATE TABLE stations (name VARCHAR PRIMARY KEY, \
-            lat FLOAT, long FLOAT, altitude FLOAT, \
-            power BOOLEAN, wifi BOOLEAN, radious FLOAT);")
+            lat FLOAT, long FLOAT, \
+            power BOOLEAN, wifi BOOLEAN, radius FLOAT);")
         cursor.execute("INSERT INTO stations (name, lat, long, power, wifi, radius) VALUES (%s, %s, %s, %s, %s, %s);", ("alpha", 50.0, 50.0, True, True, 4.0))
         cursor.execute("INSERT INTO stations (name, lat, long, power, wifi, radius) VALUES (%s, %s, %s, %s, %s, %s);", ("beta", 48.0, 36.0, True, True, 5.0))
         cursor.execute("INSERT INTO stations (name, lat, long, power, wifi, radius) VALUES (%s, %s, %s, %s, %s, %s);", ("charlie", 32.0, 24.0, True, True, 3.0))
