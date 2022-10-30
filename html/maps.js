@@ -40,4 +40,6 @@ function makePersonalIcons(rdBttn){
     const canvas = document.getElementById("canvas")
    canvas.style.display = "block"
    document.getElementById("warning").style.display="none"
+
+   setTimeout(() => {})
 }
