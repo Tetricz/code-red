@@ -77,7 +77,10 @@ h1{
 }
 
 .horizontalBar{
-    position: fixed;
+    position: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 li{
@@ -89,4 +92,12 @@ li{
     text-align: center;
     text-decoration: none; 
     
+}
+
+.button{
+    background: none;
+    font-weight: bolder;
+    text-align: center;
+    border: none;
+    font-size: 1.25em;
 }

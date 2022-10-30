@@ -80,6 +80,7 @@ function start(){
     document.getElementById("routesList").style.display = "none"
     document.getElementById("startRoute").style.display = "block"
     document.getElementById("StartRouteBttn").style.display = "block"
+    document.getElementById("map").style.display = "none"
 }
 
 function routeStart(){
@@ -88,3 +89,24 @@ function routeStart(){
     document.getElementById("StartRouteBttn").style.display = "none"
 
 }
+//end of starting webpage
+
+
+//horizontal button messages
+function getPersonal(){
+
+}
+
+function getRovers(){
+
+}
+
+function getPastTrips(){
+
+}
+
+function getCurrentTrip(){
+
+}
+
+//end horizontal buttons
