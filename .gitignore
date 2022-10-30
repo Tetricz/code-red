@@ -8,3 +8,4 @@ myapp
 *.d
 *.out
 __pycache__
+*.txt
