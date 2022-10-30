@@ -1,0 +1,45 @@
+only need the end cord
+Should generate path off of that
+
+map
+embaded google earth
+Look into updating google earth via real time ish
+
+Generate Cords and then show route
+
+for howmanyclones sql.getrows for the ()
+
+locate personal map only says error
+
+
+
+    
+
+    <div class = "tabbedView" style ="display:none" id ="ReportSideBar">
+        <a class="tabbedViewTitle">Route</a>
+        <br>
+        <a class="tabbedViewTitle" id = "date"></a>
+        <br>
+        <hr class="line">
+
+        <div class="tabbedViewTitle" id="startRoute">
+            <label>X Position:</label> <br>
+            <input type="text" id="xpos" name="xPosition"/> <br/>
+            <hr class="line">
+            <label>Y Position: </label><br>
+            <input type="text" id="ypos" name="yPosition"/> <br/>
+            <hr class="line">
+            <button onclick="routeStart()" id="StartRouteBttn">Start Route</button>
+
+        </div>
+
+        <form id = "routesList">
+            <div class = "lines" id = "lines">
+                <input type="checkbox" name="routeBox" value="route"  checked>
+                <label for ="route1" class="tabbedViewBars"> Spot 1</label>
+                <br>
+            <hr class="line">
+            </div>
+            
+          </form>
+    </div>

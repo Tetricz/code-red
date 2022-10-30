@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <link rel="stylesheet" href="UIStyleSheet.css">
+    <link rel="icon" type="image/svg+xml" href="https://www.tetricz.com/favicon.svg">
+    <script src="UIScript.js"></script>
+    <script src="maps.js"></script>
+<title>Rover Map</title>
+</head>
+
+<body onload="generateMap()">
+    <div class="horizontalBar" id="horizonBar">
+        
+        <ul>
+            <li><a href="setRoute.html" class="button">Current Route</a></li>
+            <li><a href="findPersonal.html" class="button">Locate Personal</a></li>
+            <li><a href="findRovers.html" class="button">Locate Rovers</a></li>
+            <li><a href="pastRoutes.html" class="button">Past Routes</a></li>
+            <li><a href="index.html" class="button">Home</a></li>
+          </ul>
+    </div>
+
+    <h1>Locate Personal</h1>
+    <div class="checkBoxes" id="roverSelect">
+        
+        <ul>
+            <input type="radio" id="personal1" name="rovers" value="rover" onchange="makePersonalIcons(this)">
+            <label for="rover1"> Personal 1</label>
+            <input type="radio" id="personal2" name="rovers" value="rover" onchange="makePersonalIcons(this)">
+            <label for="rover2"> Personal 2</label>
+            <input type="radio" id="personal3" name="rovers" value="rover" onchange="makePersonalIcons(this)">
+            <label for="rover3"> Personal 3</label>
+          </ul>
+    </div>
+    <h2 id="warning">Select A Personal For Information</h2>
+
+    <canvas width="100" height="100" class="canvas" id="canvas"></canvas>
+
+    <h2 id="sysWarn" style="color:red; font-weight: bold; display: none;">Error! No Personal Found.</h2>
+</body>
