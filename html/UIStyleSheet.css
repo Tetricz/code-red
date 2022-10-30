@@ -8,7 +8,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #B3D1D0;
-    color: black;
+    color: #5401A7;
 }
 
 .tabbedView{
@@ -162,3 +162,26 @@ h2{
 .wrapWrap{
     justify-content: center;
 }
+
+.position{
+    text-align: center;
+    position: flex;
+}
+
+#myProgress {
+    width: 75%;
+    background-color: grey;
+    justify-content: center;
+    position: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #myBar {
+    width: 10%;
+  height: 30px;
+  background-color: #5401A7;
+  text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px; /* To center it vertically */
+  color: whitesmoke;
+  }

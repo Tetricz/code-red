@@ -4,10 +4,11 @@
     <link rel="stylesheet" href="UIStyleSheet.css">
     <link rel="icon" type="image/svg+xml" href="https://www.tetricz.com/favicon.svg">
     <script src="UIScript.js"></script>
+    <script src="maps.js"></script>
 <title>Rover Map</title>
 </head>
 
-<body>
+<body onload="makeCords()">
     <div class="horizontalBar" id="horizonBar">
         
         <ul>
@@ -20,6 +21,26 @@
     </div>
 
     <h1>Set Route</h1>
-
     
+
+    <div class="position" id="position">
+        <h3>Please Insert The Endpoint Coordinates</h3>
+        <label>X Position:</label>
+        <input type="text" id="xPos" name="xPos"><br><br>
+        <label>Y Position:</label>
+        <input type="text" id="yPos" name="yPos"><br><br>
+
+        <button onclick="move()">Start Route</button>
+    </div>
+
+    <div id="myProgress">
+        <div id="myBar">
+        </div>
+    </div>
+    
+    <div id="currentRoute" class="position">
+        <label>The current route is set for</label>
+        <label id="currentRouteCords"></label>
+    </div>
+
 </body>

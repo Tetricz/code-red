@@ -17,11 +17,13 @@ function generateMap(){
 
     canvas.style.display = "none"
     document.getElementById("warning").style.display="block"
+    document.getElementById("roverInfo").style.display="none"
 }
 
 function makeIcons(rdBttn){
    const canvas = document.getElementById("canvas")
    canvas.style.display = "block"
+   document.getElementById("roverInfo").style.display="block"
    document.getElementById("warning").style.display="none"
 
     var radio = rdBttn.id
@@ -49,4 +51,36 @@ function personalError(){
     document.getElementById("canvas").style.display = "none"
 }
 
-{{ helloworld }}
+var i = 0;
+function move() {
+    document.getElementById("position").style.display="none"
+    document.getElementById("myProgress").style.display="block"
+    if (i == 0) {
+        i = 1;
+        var elem = document.getElementById("myBar");
+        var width = 10;
+        var id = setInterval(frame, 20);
+        function frame() {
+          if (width >= 100) {
+            clearInterval(id);
+            i = 0;
+            loadRoute()
+          } else {
+            width++;
+            elem.style.width = width + "%";
+            elem.innerHTML = width + "%";
+          }
+        }
+      }
+}
+
+function makeCords(){
+    document.getElementById("position").style.display="block"
+    document.getElementById("myProgress").style.display="none"
+    document.getElementById("currentRoute").style.display="none"
+}
+
+function loadRoute(){
+    document.getElementById("myProgress").style.display="none"
+    document.getElementById("currentRoute").style.display="block"
+}
