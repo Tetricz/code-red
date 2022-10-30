@@ -4,6 +4,7 @@ from telnetlib import STATUS
 import queue
 import csv
 import os
+from video import video
 
 class rover:
     def __init__(self,_id,_battery,_total_memory,_used_memory): #constructor
@@ -61,6 +62,9 @@ class rover:
             file.write(str(self.long)+',\n')
 
 
+if __name__ == "__main__":
+    v = video(0,0,100,"name",80.0)
+    v.debug()
 
     
 
