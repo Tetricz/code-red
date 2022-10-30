@@ -52,10 +52,39 @@ function grabDate(){
 //End of Date/Time Entry
 
 //Start of dupliating route options
-function cloneElements(){
+function cloneElements(identityNum){
     var elem = document.querySelector('#lines')
     var clone = elem.cloneNode(true)
-    clone.id = "lines2"
+    clone.id = "lines" + identityNum
     elem.after(clone)
 }
+
+//takes the entry for each row and gets it returned
+function howManyClones(routes){
+    for(i = 0; i < routes; i++){
+        cloneElements(i)
+    }
+}
 //End of route dups
+
+//Start of determing if starting or in route
+
+function isInRoute(){
+
+}
+
+//end of determin start or in route
+
+//starting of webpage
+function start(){
+    document.getElementById("routesList").style.display = "none"
+    document.getElementById("startRoute").style.display = "block"
+    document.getElementById("StartRouteBttn").style.display = "block"
+}
+
+function routeStart(){
+    document.getElementById("routesList").style.display = "block"
+    document.getElementById("startRoute").style.display = "none"
+    document.getElementById("StartRouteBttn").style.display = "none"
+
+}
