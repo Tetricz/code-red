@@ -43,3 +43,9 @@ body{
 h1{
     text-align: center;
 }
+
+.line {
+    opacity: 50%;
+    background-color: whitesmoke;
+    height: 0.1px
+}
