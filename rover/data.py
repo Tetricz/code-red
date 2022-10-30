@@ -1,17 +1,20 @@
 from abc import abstractmethod
+from datetime import datetime
 import os
 import os.path
 
 class data:
 
+    _datetime      = None;
+    _lat           = None;
+    _long          = None;
+    _battery_level = None;
 
-    def __init__(self,_date,_time,_lat,_long,_altitude,_battery_level):
-        self.date = _date;
-        self.time = _time;
+    def __init__(self,_lat,_long,_battery_level):
+        self.datetime = datetime.now();
         self.lat = _lat;
         self.long = _long;
-        self.altitude = _altitude;
-        self.batery_level = _battery_level;
+        self.battery_level = _battery_level;
     @abstractmethod
     def _debug_print():
         pass
@@ -20,3 +23,6 @@ class data:
         pass
 
 
+
+if __name__ == "__main__":
+    print("Hi :D")

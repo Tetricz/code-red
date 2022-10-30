@@ -4,6 +4,7 @@ from telnetlib import STATUS
 import queue
 import csv
 import os
+from video import video
 import os.path
 from data import data
 
@@ -22,7 +23,7 @@ class rover:
         return direction
 
     def check_battery(self):
-        if(self.battery <= 10):
+        if(self.battery <= 10.0):
             self.status = 5
     def upload():
         pass;
@@ -75,6 +76,9 @@ class rover:
 
 
 
+if __name__ == "__main__":
+    v = video(0,0,100,"name",80.0)
+    v.debug()
 
     
 
