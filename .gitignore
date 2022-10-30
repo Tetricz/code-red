@@ -1,0 +1,11 @@
+.DS_Store
+
+*.o
+*obj/
+app
+myapp
+
+*.d
+*.out
+__pycache__
+*.txt
