@@ -12,6 +12,14 @@ class DatabaseComs:
         self.conn = conn
         self.cursor = self.conn.cursor()
 
+    def updateRover(self, rover_id, battery):
+        # id, status, online, state_entered, battery_level
+        self.cursor.execute("UPDATE rover_state SET battery_level = " + str(battery) + " WHERE id = " + str(rover_id) + ";")
+        self.cursor.execute("UPDATE rover_state SET battery_level = " + str(state_entered) + " WHERE id = " + str(rover_id) + ";")
+        self.cursor.execute("UPDATE rover_state SET battery_level = " + str(online) + " WHERE id = " + str(rover_id) + ";")
+        self.cursor.execute("UPDATE rover_state SET battery_level = " + str(status) + " WHERE id = " + str(rover_id) + ";")
+        self.commit()
+
     def insertGeo(self, dataStr):
         self.cursor.execute("INSERT INTO geo_events (date, rover_id, geo_type, location) VALUES " + dataStr + ";")
 
