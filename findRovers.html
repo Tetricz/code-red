@@ -22,19 +22,20 @@
 
     <h1>Locate Rovers</h1>
 
+    <label id="test">Test</label>
     <div class="checkBoxes" id="roverSelect">
         
         <ul>
-            <input type="radio" id="roverSelections" name="rovers" value="rover">
+            <input type="radio" id="roverSelection1" name="rovers" value="rover" onchange="makeIcons(this)">
             <label for="rover1"> Rover 1</label>
-            <input type="radio" id="roverSelections" name="rovers" value="rover">
+            <input type="radio" id="roverSelection2" name="rovers" value="rover" onchange="makeIcons(this)">
             <label for="rover2"> Rover 2</label>
-            <input type="radio" id="roverSelections" name="rovers" value="rover">
+            <input type="radio" id="roverSelection3" name="rovers" value="rover" onchange="makeIcons(this)">
             <label for="rover3"> Rover 3</label>
           </ul>
     </div>
     
-    <!--<h2>Select A Rover For Information</h2>-->
+    <h2 id="warning">Select A Rover For Information</h2>
 
     <canvas width="500" height="500" class="canvas" id="canvas"></canvas>
 </body>
